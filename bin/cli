@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../config/environment'
+Dir["cli/controllers/*.rb"].each {|f| require f}
+Dir["cli/views/*.rb"].each {|f| require f}
+
+puts "Welcome to Get Crunked! Making coding easier since 2015"
+Router.start
