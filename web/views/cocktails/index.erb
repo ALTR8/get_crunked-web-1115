@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All The Drinks</title>
+</head>
+<body>
+  <ul>
+    <% @cocktails.each do |cocktail| %>
+      <li><a href="/cocktails/<%= cocktail.id %>"><%= cocktail.name %></a></li>
+    <% end %>
+  </ul>
+</body>
+</html>
