@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= @cocktail.name %></title>
+</head>
+<body>
+  <h2><%= @cocktail.name %></h2>
+  <hr />
+  <p><%= @cocktail.instructions %></p>
+  <ul>
+    <% @cocktail.proportions.each do |proportion| %>
+      <li><%= proportion.amount %> <%= proportion.ingredient.name %></li>
+    <% end %>
+  </ul>
+  <%= @cocktail.source %>
+</body>
+</html>
