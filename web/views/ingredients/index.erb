@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <% @ingredients.each do |ingredient| %>
+      <li><a href="/ingredients/<%= ingredient.id %>"><%= ingredient.name %></a></li>
+    <% end %>
+  </ul>
+</body>
+</html>

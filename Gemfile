@@ -7,3 +7,5 @@ gem 'pry'
 
 gem 'rack'
 gem 'tilt'
+
+gem "sinatra", require: "sinatra/base"

@@ -8,3 +8,7 @@ end
 map "/cocktails" do
   run CocktailsController.new
 end
+
+map "/ingredients" do
+  run IngredientsController.new
+end
